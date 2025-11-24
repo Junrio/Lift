@@ -5,6 +5,7 @@ import { useRef } from "react";
 import Image from "next/image";
 import { scrollToSection } from "@/utils/scroll";
 import { buildBookingMailto } from "@/utils/booking";
+import { getImagePath } from "@/utils/paths";
 
 export default function Hero() {
   const containerRef = useRef<HTMLElement>(null);
@@ -96,7 +97,7 @@ export default function Hero() {
           <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-card/80 p-4 shadow-[0_24px_60px_rgba(0,0,0,0.85)]">
             <div className="relative mb-4 w-full h-64 sm:h-72 md:h-80 lg:h-96 overflow-hidden rounded-2xl">
               <Image
-                src="/images/hero.jpg"
+                src={getImagePath("/images/hero.jpg")}
                 alt="People training at LIFT gym"
                 fill
                 className="object-cover"

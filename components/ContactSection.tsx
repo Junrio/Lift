@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
+import { getImagePath } from "@/utils/paths";
 
 export default function ContactSection() {
   const contactRef = useRef<HTMLElement>(null);
@@ -81,7 +82,7 @@ export default function ContactSection() {
             >
               <div className="relative h-48 sm:h-56 md:h-64 w-full">
                 <Image
-                  src="/images/contact-gym.jpg"
+                  src={getImagePath("/images/contact-gym.jpg")}
                   alt="LIFT front desk and training area"
                   fill
                   className="object-cover"

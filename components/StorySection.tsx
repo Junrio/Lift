@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
 import { scrollToSection } from "@/utils/scroll";
+import { getImagePath } from "@/utils/paths";
 
 export default function StorySection() {
   const storyRef = useRef<HTMLElement>(null);
@@ -57,7 +58,7 @@ export default function StorySection() {
             className="relative h-64 sm:h-80 md:h-96 lg:h-[420px] w-full overflow-hidden rounded-2xl border border-muted bg-card/80"
           >
             <Image
-              src="/images/story.jpg"
+              src={getImagePath("/images/story.jpg")}
               alt="LIFT gym community and fitness journey"
               fill
               className="object-cover"

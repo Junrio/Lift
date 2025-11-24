@@ -3,6 +3,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import ClassCard from "./ClassCard";
+import { getImagePath } from "@/utils/paths";
 
 const classes = [
   {
@@ -12,7 +13,7 @@ const classes = [
     duration: "45 min",
     intensity: "High",
     focus: "Full Body",
-    imageUrl: "/images/total-body-burn.jpg",
+    imageUrl: getImagePath("/images/total-body-burn.jpg"),
   },
   {
     name: "Endurance Power",
@@ -21,7 +22,7 @@ const classes = [
     duration: "60 min",
     intensity: "High",
     focus: "Cardio",
-    imageUrl: "/images/endurance-power.jpg",
+    imageUrl: getImagePath("/images/endurance-power.jpg"),
   },
   {
     name: "Strength Training",
@@ -30,7 +31,7 @@ const classes = [
     duration: "50 min",
     intensity: "Medium-High",
     focus: "Muscle Building",
-    imageUrl: "/images/strength-training.jpg",
+    imageUrl: getImagePath("/images/strength-training.jpg"),
   },
   {
     name: "Dynamic Workout",
@@ -39,7 +40,7 @@ const classes = [
     duration: "40 min",
     intensity: "Medium",
     focus: "Functional",
-    imageUrl: "/images/dynamic-workout.jpg",
+    imageUrl: getImagePath("/images/dynamic-workout.jpg"),
   },
   {
     name: "Power Training",
@@ -48,7 +49,7 @@ const classes = [
     duration: "45 min",
     intensity: "High",
     focus: "Power & Speed",
-    imageUrl: "/images/power-training.jpg",
+    imageUrl: getImagePath("/images/power-training.jpg"),
   },
   {
     name: "Cardio Blast",
@@ -57,7 +58,7 @@ const classes = [
     duration: "30 min",
     intensity: "High",
     focus: "Cardio",
-    imageUrl: "/images/cardio-blast.jpg",
+    imageUrl: getImagePath("/images/cardio-blast.jpg"),
   },
   {
     name: "Flex and Flow Yoga",
@@ -66,7 +67,7 @@ const classes = [
     duration: "60 min",
     intensity: "Low-Medium",
     focus: "Flexibility & Mindfulness",
-    imageUrl: "/images/flex-flow-yoga.jpg",
+    imageUrl: getImagePath("/images/flex-flow-yoga.jpg"),
   },
   {
     name: "Endurance Circuit Challenge",
@@ -75,7 +76,7 @@ const classes = [
     duration: "55 min",
     intensity: "High",
     focus: "Circuit Training",
-    imageUrl: "/images/endurance-circuit.jpg",
+    imageUrl: getImagePath("/images/endurance-circuit.jpg"),
   },
 ];
 
