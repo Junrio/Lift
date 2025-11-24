@@ -2,6 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   output: 'export', // Enable static export for GitHub Pages
+  basePath: '/Lift', // Required for GitHub Pages subdirectory
+  assetPrefix: '/Lift', // Required for GitHub Pages assets
   images: {
     unoptimized: true, // Required for static export
     remotePatterns: [
