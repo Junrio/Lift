@@ -8,7 +8,7 @@ export default function ContactSection() {
   const contactRef = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({
     target: contactRef,
-    offset: ["start bottom", "end top"],
+    offset: ["start end", "end start"],
   });
 
   const leftY = useTransform(scrollYProgress, [0, 1], [20, -20]);

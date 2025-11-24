@@ -9,7 +9,7 @@ export default function StorySection() {
   const storyRef = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({
     target: storyRef,
-    offset: ["start bottom", "end top"],
+    offset: ["start end", "end start"],
   });
 
   const textY = useTransform(scrollYProgress, [0, 1], [20, -20]);

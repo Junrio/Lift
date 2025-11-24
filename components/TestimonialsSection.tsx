@@ -37,7 +37,7 @@ export default function TestimonialsSection() {
   const testimonialsRef = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({
     target: testimonialsRef,
-    offset: ["start bottom", "end top"],
+    offset: ["start end", "end start"],
   });
 
   const sectionY = useTransform(scrollYProgress, [0, 1], [0, -12]);

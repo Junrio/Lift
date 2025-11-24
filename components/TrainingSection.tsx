@@ -41,7 +41,7 @@ export default function TrainingSection() {
   const trainingRef = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({
     target: trainingRef,
-    offset: ["start bottom", "end top"],
+    offset: ["start end", "end start"],
   });
 
   const titleY = useTransform(scrollYProgress, [0, 1], [20, -20]);
